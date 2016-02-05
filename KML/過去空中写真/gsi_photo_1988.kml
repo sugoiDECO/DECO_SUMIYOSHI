@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<!-- GSI Version 2.0 - 2014/07/16 -->
+<Document>
+	<name>地理院地図KML</name>
+	<open>1</open>
+	<Folder>
+		<name>地理院地図KML_空中写真(1988～1990年)- NetworkLink</name>
+		<Snippet maxLines="5">
+<![CDATA[
+この地図画像は、<a href="http://www.gsi.go.jp">国土地理院</a>から試験的に配信されています。
+ご利用の際は、<a href="http://portal.cyberjapan.jp/help/termsofuse.html">利用規約</a>を遵守するとともに、ご利用のシステムの利用規約等を遵守してください。国土地理院は、利用に関連する損失または損害について一切の責任を負いません。
+]]>
+		</Snippet>
+		<description>
+<![CDATA[
+<iFrame name="contract4cjp" src="http://portal.cyberjapan.jp/portalsite/kiyaku/index.html#haikei" width="1280" height="800" frameborder="0" seamless></iFrame>
+]]>
+		</description>
+		<atom:author>
+			<atom:name>Geospatial Information Authority of Japan @MLIT</atom:name>
+		</atom:author>
+		<atom:link href="http://www.gsi.go.jp/" />
+		<open>0</open>
+		<NetworkLink>
+			<name>GSI Tiles</name>
+			<open>1</open>
+			<description></description>
+			<Url>
+				<href>http://kmlnetworklink.gsi.go.jp/wskmlnetworklinkgsi/?XYTYPE=2&amp;ZMIN=10&amp;ZMAX=17&amp;IMAGETYPE=jpg&amp;BASEURL=http%3a%2f%2fcyberjapandata%2egsi%2ego%2ejp%2fxyz%2fgazo4%2f</href>
+				<viewRefreshMode>onStop</viewRefreshMode>
+				<viewRefreshTime>0.1</viewRefreshTime>
+			</Url>
+		</NetworkLink>
+		<ScreenOverlay id="sign">
+			<name>地理院地図ロゴ</name>
+			<Icon>
+				<href>http://portal.cyberjapan.jp/help/common/images/logo.gif</href>
+			</Icon>
+			<overlayXY x="0" y="0" xunits="fraction" yunits="fraction" />
+			<screenXY x="10" y="30" xunits="pixels" yunits="pixels" />
+			<rotationXY x="0" y="0" xunits="fraction" yunits="fraction" />
+			<size x="143" y="24" xunits="pixels" yunits="pixels" />
+		</ScreenOverlay>
+	</Folder>
+</Document>
+</kml>
