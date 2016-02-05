@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:ns2="http://www.google.com/kml/ext/2.2" xmlns:ns3="http://www.w3.org/2005/Atom" xmlns:ns4="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0">
+    <Document>
+        <LookAt>
+            <longitude>135.41187571065984</longitude>
+            <latitude>34.666020629975975</latitude>
+            <altitude>152849.38512342534</altitude>
+            <heading>0.0</heading>
+            <tilt>0.0</tilt>
+            <range>123510.32038528379</range>
+            <altitudeMode>clampToGround</altitudeMode>
+        </LookAt>
+        <NetworkLink>
+            <name>P20-12_27</name>
+            <visibility>1</visibility>
+            <open>1</open>
+            <LookAt>
+                <longitude>135.41265796683564</longitude>
+                <latitude>34.665685365724954</latitude>
+                <altitude>125623.34951353437</altitude>
+                <heading>0.0</heading>
+                <tilt>0.0</tilt>
+                <range>101510.25556144814</range>
+                <altitudeMode>clampToGround</altitudeMode>
+            </LookAt>
+            <Url>
+                <href>http://52.193.94.69:8080/geoserver/Evacate/wms?service=wms&amp;request=GetMap&amp;version=1.1.1&amp;format=application/vnd.google-earth.kml+xml&amp;layers=Evacate:EvacuationPlace&amp;styles=EvacuationPlace&amp;height=768&amp;width=656&amp;transparent=false&amp;srs=EPSG:4326</href>
+                <refreshInterval>0.0</refreshInterval>
+                <viewRefreshMode>onStop</viewRefreshMode>
+                <viewRefreshTime>1.0</viewRefreshTime>
+                <viewBoundScale>1.0</viewBoundScale>
+            </Url>
+        </NetworkLink>
+    </Document>
+</kml>
