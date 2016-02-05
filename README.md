@@ -1,1 +1,1 @@
-# DECO_Sumiyoshi
+# DECO_SUMIYOSHI
