@@ -1,35 +1,1651 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:ns2="http://www.google.com/kml/ext/2.2" xmlns:ns3="http://www.w3.org/2005/Atom" xmlns:ns4="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0">
-    <Document>
-        <LookAt>
-            <longitude>135.42164492555457</longitude>
-            <latitude>34.645128690144894</latitude>
-            <altitude>119147.52350480527</altitude>
-            <heading>0.0</heading>
-            <tilt>0.0</tilt>
-            <range>96277.44847850422</range>
-            <altitudeMode>clampToGround</altitudeMode>
-        </LookAt>
-        <NetworkLink>
-            <name>P34-14_27</name>
-            <visibility>1</visibility>
-            <open>1</open>
-            <LookAt>
-                <longitude>135.42164492555457</longitude>
-                <latitude>34.645128690144894</latitude>
-                <altitude>119147.52350480527</altitude>
-                <heading>0.0</heading>
-                <tilt>0.0</tilt>
-                <range>96277.44847850422</range>
-                <altitudeMode>clampToGround</altitudeMode>
-            </LookAt>
-            <Url>
-                <href>http://52.193.94.69:8080/geoserver/deco_osaka/wms?service=wms&amp;request=GetMap&amp;version=1.1.1&amp;format=application/vnd.google-earth.kml+xml&amp;layers=deco_osaka:MunicipalOffice&amp;styles=Municipal_Office&amp;height=2048&amp;width=2048&amp;transparent=false&amp;srs=EPSG:4326&amp;format_options=AUTOFIT:true;KMATTR:true;KMPLACEMARK:false;KMSCORE:40;MODE:refresh;SUPEROVERLAY:false</href>
-                <refreshInterval>0.0</refreshInterval>
-                <viewRefreshMode>onStop</viewRefreshMode>
-                <viewRefreshTime>1.0</viewRefreshTime>
-                <viewBoundScale>1.0</viewBoundScale>
-            </Url>
-        </NetworkLink>
-    </Document>
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document id="root_doc">
+	<name>市区町村役場データ.kml</name>
+	<Schema name="市区町村役場データ" id="市区町村役場データ">
+		<SimpleField type="string" name="P34_001"></SimpleField>
+		<SimpleField type="string" name="P34_002"></SimpleField>
+		<SimpleField type="string" name="P34_003"></SimpleField>
+		<SimpleField type="string" name="P34_004"></SimpleField>
+	</Schema>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>0.6</scale>
+			<Icon>
+				<href>https://raw.githubusercontent.com/sugoiDECO/DECO_SUMIYOSHI/master/Icon/hospital_16px.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+		<LineStyle>
+			<color>ffff9933</color>
+			<width>4</width>
+		</LineStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>0.709091</scale>
+			<Icon>
+				<href>https://raw.githubusercontent.com/sugoiDECO/DECO_SUMIYOSHI/master/Icon/hospital_16px.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+		<LineStyle>
+			<color>ffff9933</color>
+			<width>4</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Folder>
+		<name>市区町村役場データ</name>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27100</SimpleData>
+					<SimpleData name="P34_002">1</SimpleData>
+					<SimpleData name="P34_003">大阪市役所</SimpleData>
+					<SimpleData name="P34_004">大阪市北区中之島1-3-20</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.502046,34.693891,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27102</SimpleData>
+					<SimpleData name="P34_002">1</SimpleData>
+					<SimpleData name="P34_003">大阪市都島区役所</SimpleData>
+					<SimpleData name="P34_004">大阪市都島区中野町2-16-20</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.52809,34.701279,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27103</SimpleData>
+					<SimpleData name="P34_002">1</SimpleData>
+					<SimpleData name="P34_003">大阪市福島区役所</SimpleData>
+					<SimpleData name="P34_004">大阪市福島区大開1-8-1</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.472232,34.692357,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27104</SimpleData>
+					<SimpleData name="P34_002">1</SimpleData>
+					<SimpleData name="P34_003">大阪市此花区役所</SimpleData>
+					<SimpleData name="P34_004">大阪市此花区春日出北1-8-4</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.452225,34.683038,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27106</SimpleData>
+					<SimpleData name="P34_002">1</SimpleData>
+					<SimpleData name="P34_003">大阪市西区役所</SimpleData>
+					<SimpleData name="P34_004">大阪市西区新町4-5-14</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.486111,34.676384,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27107</SimpleData>
+					<SimpleData name="P34_002">1</SimpleData>
+					<SimpleData name="P34_003">大阪市港区役所</SimpleData>
+					<SimpleData name="P34_004">大阪市港区市岡1-15-25</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.460611,34.663918,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27108</SimpleData>
+					<SimpleData name="P34_002">1</SimpleData>
+					<SimpleData name="P34_003">大阪市大正区役所</SimpleData>
+					<SimpleData name="P34_004">大阪市大正区千島2-7-95</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.472694,34.650417,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27109</SimpleData>
+					<SimpleData name="P34_002">1</SimpleData>
+					<SimpleData name="P34_003">大阪市天王寺区役所</SimpleData>
+					<SimpleData name="P34_004">大阪市天王寺区真法院町20-33</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.51937,34.657869,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27111</SimpleData>
+					<SimpleData name="P34_002">1</SimpleData>
+					<SimpleData name="P34_003">大阪市浪速区役所</SimpleData>
+					<SimpleData name="P34_004">大阪市浪速区敷津東1-4-20</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.49955,34.659419,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27113</SimpleData>
+					<SimpleData name="P34_002">1</SimpleData>
+					<SimpleData name="P34_003">大阪市西淀川区役所</SimpleData>
+					<SimpleData name="P34_004">大阪市西淀川区御幣島1-2-10</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.456202,34.711409,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27114</SimpleData>
+					<SimpleData name="P34_002">1</SimpleData>
+					<SimpleData name="P34_003">大阪市東淀川区役所</SimpleData>
+					<SimpleData name="P34_004">大阪市東淀川区豊新2-1-4</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.52934,34.741313,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27114</SimpleData>
+					<SimpleData name="P34_002">2</SimpleData>
+					<SimpleData name="P34_003">東淀川区出張所</SimpleData>
+					<SimpleData name="P34_004">大阪市東淀川区東淡路4-15-1</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.516688,34.738074,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27115</SimpleData>
+					<SimpleData name="P34_002">1</SimpleData>
+					<SimpleData name="P34_003">大阪市東成区役所</SimpleData>
+					<SimpleData name="P34_004">大阪市東成区大今里西2-8-4</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.541223,34.669996,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27116</SimpleData>
+					<SimpleData name="P34_002">1</SimpleData>
+					<SimpleData name="P34_003">大阪市生野区役所</SimpleData>
+					<SimpleData name="P34_004">大阪市生野区勝山南3-1-19</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.534447,34.653745,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27117</SimpleData>
+					<SimpleData name="P34_002">1</SimpleData>
+					<SimpleData name="P34_003">大阪市旭区役所</SimpleData>
+					<SimpleData name="P34_004">大阪市旭区大宮1-1-17</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.544142,34.721266,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27118</SimpleData>
+					<SimpleData name="P34_002">1</SimpleData>
+					<SimpleData name="P34_003">大阪市城東区役所</SimpleData>
+					<SimpleData name="P34_004">大阪市城東区中央3-4-29</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.545987,34.702013,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27119</SimpleData>
+					<SimpleData name="P34_002">1</SimpleData>
+					<SimpleData name="P34_003">大阪市阿倍野区役所</SimpleData>
+					<SimpleData name="P34_004">大阪市阿倍野区文の里1-1-40</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.518499,34.638969,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27120</SimpleData>
+					<SimpleData name="P34_002">1</SimpleData>
+					<SimpleData name="P34_003">大阪市住吉区役所</SimpleData>
+					<SimpleData name="P34_004">大阪市住吉区南住吉3-15-55</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.500498,34.603718,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27121</SimpleData>
+					<SimpleData name="P34_002">1</SimpleData>
+					<SimpleData name="P34_003">大阪市東住吉区役所</SimpleData>
+					<SimpleData name="P34_004">大阪市東住吉区東田辺1-13-4</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.526612,34.622118,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27121</SimpleData>
+					<SimpleData name="P34_002">2</SimpleData>
+					<SimpleData name="P34_003">矢田出張所</SimpleData>
+					<SimpleData name="P34_004">大阪市東住吉区矢田6-7-25</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.532289,34.603245,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27122</SimpleData>
+					<SimpleData name="P34_002">1</SimpleData>
+					<SimpleData name="P34_003">大阪市西成区役所</SimpleData>
+					<SimpleData name="P34_004">大阪市西成区岸里1-5-20</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.494587,34.635058,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27123</SimpleData>
+					<SimpleData name="P34_002">1</SimpleData>
+					<SimpleData name="P34_003">大阪市淀川区役所</SimpleData>
+					<SimpleData name="P34_004">大阪市淀川区十三東2-3-3</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.486746,34.721006,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27124</SimpleData>
+					<SimpleData name="P34_002">1</SimpleData>
+					<SimpleData name="P34_003">大阪市鶴見区役所</SimpleData>
+					<SimpleData name="P34_004">大阪市鶴見区横堤5-4-19</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.57419,34.704566,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27125</SimpleData>
+					<SimpleData name="P34_002">1</SimpleData>
+					<SimpleData name="P34_003">大阪市住之江区役所</SimpleData>
+					<SimpleData name="P34_004">大阪市住之江区御崎3-1-17</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.482717,34.60967,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27126</SimpleData>
+					<SimpleData name="P34_002">1</SimpleData>
+					<SimpleData name="P34_003">大阪市平野区役所</SimpleData>
+					<SimpleData name="P34_004">大阪市平野区背戸口3-8-19</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.545999,34.62116,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27126</SimpleData>
+					<SimpleData name="P34_002">2</SimpleData>
+					<SimpleData name="P34_003">長吉出張所</SimpleData>
+					<SimpleData name="P34_004">大阪市平野区長吉長原2-6-58</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.568912,34.605968,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27126</SimpleData>
+					<SimpleData name="P34_002">2</SimpleData>
+					<SimpleData name="P34_003">瓜破出張所</SimpleData>
+					<SimpleData name="P34_004">大阪市平野区瓜破7-2-7</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.55399,34.601194,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27126</SimpleData>
+					<SimpleData name="P34_002">2</SimpleData>
+					<SimpleData name="P34_003">加美出張所</SimpleData>
+					<SimpleData name="P34_004">大阪市平野区加美鞍作1-9-3</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.564617,34.625883,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27127</SimpleData>
+					<SimpleData name="P34_002">1</SimpleData>
+					<SimpleData name="P34_003">大阪市北区役所</SimpleData>
+					<SimpleData name="P34_004">大阪市北区扇町2-1-27</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.510095,34.705581,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27128</SimpleData>
+					<SimpleData name="P34_002">1</SimpleData>
+					<SimpleData name="P34_003">大阪市中央区役所</SimpleData>
+					<SimpleData name="P34_004">大阪市中央区久太郎町1-2-27</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.509687,34.681225,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27140</SimpleData>
+					<SimpleData name="P34_002">1</SimpleData>
+					<SimpleData name="P34_003">堺市役所</SimpleData>
+					<SimpleData name="P34_004">堺市堺区南瓦町3-1</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.48302,34.573354,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27141</SimpleData>
+					<SimpleData name="P34_002">1</SimpleData>
+					<SimpleData name="P34_003">堺市堺区役所</SimpleData>
+					<SimpleData name="P34_004">堺市堺区南瓦町3-1</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.48302,34.573354,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27142</SimpleData>
+					<SimpleData name="P34_002">1</SimpleData>
+					<SimpleData name="P34_003">堺市中区役所</SimpleData>
+					<SimpleData name="P34_004">堺市中区深井沢町2470-7</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.498724,34.528312,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27143</SimpleData>
+					<SimpleData name="P34_002">1</SimpleData>
+					<SimpleData name="P34_003">堺市東区役所</SimpleData>
+					<SimpleData name="P34_004">堺市東区日置荘原寺町195-1</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.536474,34.538228,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27144</SimpleData>
+					<SimpleData name="P34_002">1</SimpleData>
+					<SimpleData name="P34_003">堺市西区役所</SimpleData>
+					<SimpleData name="P34_004">堺市西区鳳東町6丁600</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.464014,34.535063,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27145</SimpleData>
+					<SimpleData name="P34_002">1</SimpleData>
+					<SimpleData name="P34_003">堺市南区役所</SimpleData>
+					<SimpleData name="P34_004">堺市南区桃山台1丁1-1</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.49054,34.486444,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27146</SimpleData>
+					<SimpleData name="P34_002">1</SimpleData>
+					<SimpleData name="P34_003">堺市北区役所</SimpleData>
+					<SimpleData name="P34_004">堺市北区新金岡町5丁1-4</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.517192,34.565478,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27147</SimpleData>
+					<SimpleData name="P34_002">1</SimpleData>
+					<SimpleData name="P34_003">堺市美原区役所</SimpleData>
+					<SimpleData name="P34_004">堺市美原区黒山167-1</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.559827,34.538483,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27202</SimpleData>
+					<SimpleData name="P34_002">1</SimpleData>
+					<SimpleData name="P34_003">岸和田市役所</SimpleData>
+					<SimpleData name="P34_004">岸和田市岸城町7-1</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.370871,34.460597,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27202</SimpleData>
+					<SimpleData name="P34_002">2</SimpleData>
+					<SimpleData name="P34_003">山滝支所</SimpleData>
+					<SimpleData name="P34_004">岸和田市内畑町1033</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.438051,34.41208,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27203</SimpleData>
+					<SimpleData name="P34_002">1</SimpleData>
+					<SimpleData name="P34_003">豊中市役所</SimpleData>
+					<SimpleData name="P34_004">豊中市中桜塚3-1-1</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.469889,34.781239,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27203</SimpleData>
+					<SimpleData name="P34_002">2</SimpleData>
+					<SimpleData name="P34_003">庄内出張所</SimpleData>
+					<SimpleData name="P34_004">豊中市庄内幸町5-8-1</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.472195,34.743975,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27203</SimpleData>
+					<SimpleData name="P34_002">2</SimpleData>
+					<SimpleData name="P34_003">新千里出張所</SimpleData>
+					<SimpleData name="P34_004">豊中市新千里東町1-2-2</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.494511,34.810568,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27204</SimpleData>
+					<SimpleData name="P34_002">1</SimpleData>
+					<SimpleData name="P34_003">池田市役所</SimpleData>
+					<SimpleData name="P34_004">池田市城南1-1-1</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.428555,34.821686,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27205</SimpleData>
+					<SimpleData name="P34_002">1</SimpleData>
+					<SimpleData name="P34_003">吹田市役所</SimpleData>
+					<SimpleData name="P34_004">吹田市泉町1-3-40</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.516799,34.759405,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27205</SimpleData>
+					<SimpleData name="P34_002">2</SimpleData>
+					<SimpleData name="P34_003">千里出張所</SimpleData>
+					<SimpleData name="P34_004">吹田市津雲台1-2-1</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.508335,34.793118,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27205</SimpleData>
+					<SimpleData name="P34_002">2</SimpleData>
+					<SimpleData name="P34_003">千里丘出張所</SimpleData>
+					<SimpleData name="P34_004">吹田市千里丘上14-30</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.550607,34.795457,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27205</SimpleData>
+					<SimpleData name="P34_002">2</SimpleData>
+					<SimpleData name="P34_003">山田出張所</SimpleData>
+					<SimpleData name="P34_004">吹田市山田西2-5-1</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.528795,34.794824,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27206</SimpleData>
+					<SimpleData name="P34_002">1</SimpleData>
+					<SimpleData name="P34_003">泉大津市役所</SimpleData>
+					<SimpleData name="P34_004">泉大津市東雲町9-12</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.410472,34.504268,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27207</SimpleData>
+					<SimpleData name="P34_002">1</SimpleData>
+					<SimpleData name="P34_003">高槻市役所</SimpleData>
+					<SimpleData name="P34_004">高槻市桃園町2-1</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.617216,34.8461,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27207</SimpleData>
+					<SimpleData name="P34_002">2</SimpleData>
+					<SimpleData name="P34_003">三箇牧支所</SimpleData>
+					<SimpleData name="P34_004">高槻市三島江1-11-8</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.611509,34.803535,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27207</SimpleData>
+					<SimpleData name="P34_002">2</SimpleData>
+					<SimpleData name="P34_003">富田支所</SimpleData>
+					<SimpleData name="P34_004">高槻市富田町5-17-1</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.595082,34.830646,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27207</SimpleData>
+					<SimpleData name="P34_002">2</SimpleData>
+					<SimpleData name="P34_003">樫田支所</SimpleData>
+					<SimpleData name="P34_004">高槻市田能スハノ下11</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.589326,34.955569,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27208</SimpleData>
+					<SimpleData name="P34_002">1</SimpleData>
+					<SimpleData name="P34_003">貝塚市役所</SimpleData>
+					<SimpleData name="P34_004">貝塚市畠中1-17-1</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.358431,34.437686,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27209</SimpleData>
+					<SimpleData name="P34_002">1</SimpleData>
+					<SimpleData name="P34_003">守口市役所</SimpleData>
+					<SimpleData name="P34_004">守口市京阪本通2-2-5</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.563971,34.73768,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27210</SimpleData>
+					<SimpleData name="P34_002">1</SimpleData>
+					<SimpleData name="P34_003">枚方市役所</SimpleData>
+					<SimpleData name="P34_004">枚方市大垣内町2-1-20</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.650642,34.814465,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27211</SimpleData>
+					<SimpleData name="P34_002">1</SimpleData>
+					<SimpleData name="P34_003">茨木市役所</SimpleData>
+					<SimpleData name="P34_004">茨木市駅前3-8-13</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.568503,34.816153,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27211</SimpleData>
+					<SimpleData name="P34_002">2</SimpleData>
+					<SimpleData name="P34_003">北辰出張所</SimpleData>
+					<SimpleData name="P34_004">茨木市大字泉原332-3</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.525279,34.883742,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27212</SimpleData>
+					<SimpleData name="P34_002">1</SimpleData>
+					<SimpleData name="P34_003">八尾市役所</SimpleData>
+					<SimpleData name="P34_004">八尾市本町1-1-1</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.600948,34.626884,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27212</SimpleData>
+					<SimpleData name="P34_002">2</SimpleData>
+					<SimpleData name="P34_003">龍華出張所</SimpleData>
+					<SimpleData name="P34_004">八尾市植松町5-8-32</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.59239,34.614751,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27212</SimpleData>
+					<SimpleData name="P34_002">2</SimpleData>
+					<SimpleData name="P34_003">久宝寺出張所</SimpleData>
+					<SimpleData name="P34_004">八尾市北久宝寺2-1-1</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.587168,34.630527,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27212</SimpleData>
+					<SimpleData name="P34_002">2</SimpleData>
+					<SimpleData name="P34_003">西郡出張所</SimpleData>
+					<SimpleData name="P34_004">八尾市桂町2-37</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.606482,34.646842,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27212</SimpleData>
+					<SimpleData name="P34_002">2</SimpleData>
+					<SimpleData name="P34_003">大正出張所</SimpleData>
+					<SimpleData name="P34_004">八尾市太田3-172</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.588044,34.592725,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27212</SimpleData>
+					<SimpleData name="P34_002">2</SimpleData>
+					<SimpleData name="P34_003">山本出張所</SimpleData>
+					<SimpleData name="P34_004">八尾市山本町1-8-11</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.621012,34.628033,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27212</SimpleData>
+					<SimpleData name="P34_002">2</SimpleData>
+					<SimpleData name="P34_003">竹渕出張所</SimpleData>
+					<SimpleData name="P34_004">八尾市竹渕東1-212</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.571758,34.617872,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27212</SimpleData>
+					<SimpleData name="P34_002">2</SimpleData>
+					<SimpleData name="P34_003">南高安出張所</SimpleData>
+					<SimpleData name="P34_004">八尾市恩智中町4-232</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.632786,34.60981,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27212</SimpleData>
+					<SimpleData name="P34_002">2</SimpleData>
+					<SimpleData name="P34_003">高安出張所</SimpleData>
+					<SimpleData name="P34_004">八尾市千塚3-180-2</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.641318,34.631541,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27212</SimpleData>
+					<SimpleData name="P34_002">2</SimpleData>
+					<SimpleData name="P34_003">曙川出張所</SimpleData>
+					<SimpleData name="P34_004">八尾市八尾木4-11</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.614693,34.611655,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27212</SimpleData>
+					<SimpleData name="P34_002">2</SimpleData>
+					<SimpleData name="P34_003">志紀出張所</SimpleData>
+					<SimpleData name="P34_004">八尾市志紀町西1-8-2</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.608642,34.601134,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27213</SimpleData>
+					<SimpleData name="P34_002">1</SimpleData>
+					<SimpleData name="P34_003">泉佐野市役所</SimpleData>
+					<SimpleData name="P34_004">泉佐野市市場東1-295-3</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.327337,34.406839,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27214</SimpleData>
+					<SimpleData name="P34_002">1</SimpleData>
+					<SimpleData name="P34_003">富田林市役所</SimpleData>
+					<SimpleData name="P34_004">富田林市常盤町1-1</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.59728,34.499675,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27214</SimpleData>
+					<SimpleData name="P34_002">2</SimpleData>
+					<SimpleData name="P34_003">金剛連絡所</SimpleData>
+					<SimpleData name="P34_004">富田林市寺池台1-9-70</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.566481,34.495477,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27215</SimpleData>
+					<SimpleData name="P34_002">1</SimpleData>
+					<SimpleData name="P34_003">寝屋川市役所</SimpleData>
+					<SimpleData name="P34_004">寝屋川市本町1-1</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.628008,34.766079,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27216</SimpleData>
+					<SimpleData name="P34_002">1</SimpleData>
+					<SimpleData name="P34_003">河内長野市役所</SimpleData>
+					<SimpleData name="P34_004">河内長野市原町1-1-1</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.564119,34.458107,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27217</SimpleData>
+					<SimpleData name="P34_002">1</SimpleData>
+					<SimpleData name="P34_003">松原市役所</SimpleData>
+					<SimpleData name="P34_004">松原市阿保1-1-1</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.551786,34.577901,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27218</SimpleData>
+					<SimpleData name="P34_002">1</SimpleData>
+					<SimpleData name="P34_003">大東市役所</SimpleData>
+					<SimpleData name="P34_004">大東市谷川1-1-1</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.623471,34.712013,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27219</SimpleData>
+					<SimpleData name="P34_002">1</SimpleData>
+					<SimpleData name="P34_003">和泉市役所</SimpleData>
+					<SimpleData name="P34_004">和泉市府中町2-7-5</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.423624,34.483635,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27219</SimpleData>
+					<SimpleData name="P34_002">2</SimpleData>
+					<SimpleData name="P34_003">和泉シティープラザ出張所</SimpleData>
+					<SimpleData name="P34_004">和泉市いぶき野5-4-7</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.456627,34.457978,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27220</SimpleData>
+					<SimpleData name="P34_002">1</SimpleData>
+					<SimpleData name="P34_003">箕面市役所</SimpleData>
+					<SimpleData name="P34_004">箕面市西小路4-6-1</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.470379,34.826929,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27220</SimpleData>
+					<SimpleData name="P34_002">2</SimpleData>
+					<SimpleData name="P34_003">豊川支所</SimpleData>
+					<SimpleData name="P34_004">箕面市粟生間谷西1-2-1</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.514656,34.839735,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27220</SimpleData>
+					<SimpleData name="P34_002">2</SimpleData>
+					<SimpleData name="P34_003">止々呂美支所</SimpleData>
+					<SimpleData name="P34_004">箕面市下止々呂美953</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.462227,34.881705,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27221</SimpleData>
+					<SimpleData name="P34_002">1</SimpleData>
+					<SimpleData name="P34_003">柏原市役所</SimpleData>
+					<SimpleData name="P34_004">柏原市安堂町1-55</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.628642,34.579305,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27221</SimpleData>
+					<SimpleData name="P34_002">2</SimpleData>
+					<SimpleData name="P34_003">国分出張所</SimpleData>
+					<SimpleData name="P34_004">柏原市国分本町2-7-2</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.636471,34.565173,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27221</SimpleData>
+					<SimpleData name="P34_002">2</SimpleData>
+					<SimpleData name="P34_003">堅上出張所</SimpleData>
+					<SimpleData name="P34_004">柏原市大字雁多尾畑4812-1</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.664636,34.586905,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27222</SimpleData>
+					<SimpleData name="P34_002">1</SimpleData>
+					<SimpleData name="P34_003">羽曳野市役所</SimpleData>
+					<SimpleData name="P34_004">羽曳野市誉田4-1-1</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.606226,34.558002,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27222</SimpleData>
+					<SimpleData name="P34_002">2</SimpleData>
+					<SimpleData name="P34_003">羽曳野市支所</SimpleData>
+					<SimpleData name="P34_004">羽曳野市南恵我之荘3-1-1</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.573449,34.56943,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27223</SimpleData>
+					<SimpleData name="P34_002">1</SimpleData>
+					<SimpleData name="P34_003">門真市役所</SimpleData>
+					<SimpleData name="P34_004">門真市中町1-1</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.586899,34.739145,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27224</SimpleData>
+					<SimpleData name="P34_002">1</SimpleData>
+					<SimpleData name="P34_003">摂津市役所</SimpleData>
+					<SimpleData name="P34_004">摂津市三島1-1-1</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.561886,34.777387,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27225</SimpleData>
+					<SimpleData name="P34_002">1</SimpleData>
+					<SimpleData name="P34_003">高石市役所</SimpleData>
+					<SimpleData name="P34_004">高石市加茂4-1-1</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.442395,34.520673,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27226</SimpleData>
+					<SimpleData name="P34_002">1</SimpleData>
+					<SimpleData name="P34_003">藤井寺市役所</SimpleData>
+					<SimpleData name="P34_004">藤井寺市岡1-1-1</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.597476,34.574283,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27226</SimpleData>
+					<SimpleData name="P34_002">2</SimpleData>
+					<SimpleData name="P34_003">藤井寺市支所</SimpleData>
+					<SimpleData name="P34_004">藤井寺市沢田3-6-36</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.614775,34.572608,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27227</SimpleData>
+					<SimpleData name="P34_002">1</SimpleData>
+					<SimpleData name="P34_003">東大阪市役所</SimpleData>
+					<SimpleData name="P34_004">東大阪市荒本北1-1-1</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.600898,34.679324,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27228</SimpleData>
+					<SimpleData name="P34_002">1</SimpleData>
+					<SimpleData name="P34_003">泉南市役所</SimpleData>
+					<SimpleData name="P34_004">泉南市樽井1-1-1</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.2733,34.366007,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27229</SimpleData>
+					<SimpleData name="P34_002">1</SimpleData>
+					<SimpleData name="P34_003">四條畷市役所</SimpleData>
+					<SimpleData name="P34_004">四條畷市中野本町1-1</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.639727,34.740064,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27229</SimpleData>
+					<SimpleData name="P34_002">2</SimpleData>
+					<SimpleData name="P34_003">田原支所</SimpleData>
+					<SimpleData name="P34_004">四條畷市上田原1</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.700153,34.727689,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27230</SimpleData>
+					<SimpleData name="P34_002">1</SimpleData>
+					<SimpleData name="P34_003">交野市役所</SimpleData>
+					<SimpleData name="P34_004">交野市私部1-1-1</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.679978,34.787958,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27230</SimpleData>
+					<SimpleData name="P34_002">2</SimpleData>
+					<SimpleData name="P34_003">星田出張所</SimpleData>
+					<SimpleData name="P34_004">交野市星田1-49-5</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.667816,34.768104,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27231</SimpleData>
+					<SimpleData name="P34_002">1</SimpleData>
+					<SimpleData name="P34_003">大阪狭山市役所</SimpleData>
+					<SimpleData name="P34_004">大阪狭山市狭山1-2384-1</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.555748,34.503718,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27231</SimpleData>
+					<SimpleData name="P34_002">2</SimpleData>
+					<SimpleData name="P34_003">ニュータウン連絡所</SimpleData>
+					<SimpleData name="P34_004">大阪狭山市狭山大野台2-1-5</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.543813,34.483209,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27232</SimpleData>
+					<SimpleData name="P34_002">1</SimpleData>
+					<SimpleData name="P34_003">阪南市役所</SimpleData>
+					<SimpleData name="P34_004">阪南市尾崎町35-1</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.239656,34.359594,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27301</SimpleData>
+					<SimpleData name="P34_002">1</SimpleData>
+					<SimpleData name="P34_003">島本町役場</SimpleData>
+					<SimpleData name="P34_004">島本町桜井2-1-1</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.663009,34.883819,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27321</SimpleData>
+					<SimpleData name="P34_002">1</SimpleData>
+					<SimpleData name="P34_003">豊能町役場</SimpleData>
+					<SimpleData name="P34_004">豊能町余野414-1</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.494096,34.91885,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27321</SimpleData>
+					<SimpleData name="P34_002">2</SimpleData>
+					<SimpleData name="P34_003">吉川支所</SimpleData>
+					<SimpleData name="P34_004">豊能町東ときわ台1-2-3</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.443008,34.90234,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27322</SimpleData>
+					<SimpleData name="P34_002">1</SimpleData>
+					<SimpleData name="P34_003">能勢町役場</SimpleData>
+					<SimpleData name="P34_004">能勢町宿野28</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.414189,34.972445,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27341</SimpleData>
+					<SimpleData name="P34_002">1</SimpleData>
+					<SimpleData name="P34_003">忠岡町役場</SimpleData>
+					<SimpleData name="P34_004">忠岡町忠岡東1-34-1</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.401497,34.487125,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27361</SimpleData>
+					<SimpleData name="P34_002">1</SimpleData>
+					<SimpleData name="P34_003">熊取町役場</SimpleData>
+					<SimpleData name="P34_004">熊取町野田1-1-1</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.355863,34.401308,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27362</SimpleData>
+					<SimpleData name="P34_002">1</SimpleData>
+					<SimpleData name="P34_003">田尻町役場</SimpleData>
+					<SimpleData name="P34_004">田尻町大字嘉祥寺375-1</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.291176,34.393782,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27366</SimpleData>
+					<SimpleData name="P34_002">1</SimpleData>
+					<SimpleData name="P34_003">岬町役場</SimpleData>
+					<SimpleData name="P34_004">岬町深日2000-1</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.142085,34.3169,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27381</SimpleData>
+					<SimpleData name="P34_002">1</SimpleData>
+					<SimpleData name="P34_003">太子町役場</SimpleData>
+					<SimpleData name="P34_004">太子町大字山田88</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.647734,34.518656,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27382</SimpleData>
+					<SimpleData name="P34_002">1</SimpleData>
+					<SimpleData name="P34_003">河南町役場</SimpleData>
+					<SimpleData name="P34_004">河南町大字白木1359-6</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.62988,34.491637,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27383</SimpleData>
+					<SimpleData name="P34_002">1</SimpleData>
+					<SimpleData name="P34_003">千早赤阪村役場</SimpleData>
+					<SimpleData name="P34_004">千早赤阪村大字水分180</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.622531,34.464601,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27210</SimpleData>
+					<SimpleData name="P34_002">2</SimpleData>
+					<SimpleData name="P34_003">香里ケ丘支所</SimpleData>
+					<SimpleData name="P34_004">枚方市香里ケ丘3-13</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.656596,34.791489,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27210</SimpleData>
+					<SimpleData name="P34_002">2</SimpleData>
+					<SimpleData name="P34_003">津田支所</SimpleData>
+					<SimpleData name="P34_004">枚方市津田北町2-25-1</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.703901,34.809957,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#市区町村役場データ">
+					<SimpleData name="P34_001">27210</SimpleData>
+					<SimpleData name="P34_002">2</SimpleData>
+					<SimpleData name="P34_003">北部支所</SimpleData>
+					<SimpleData name="P34_004">枚方市楠葉並木2-29-3</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>135.681738,34.859675,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
 </kml>
