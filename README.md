@@ -1,5 +1,5 @@
 すごい災害対応訓練DECO 大阪・住吉
-#DECO_OSK
+#DECO_SUMIYOSHI
 
 <img src="https://cloud.githubusercontent.com/assets/416977/12873568/0ba5cab6-ce04-11e5-91ca-9e8371b31ee5.jpg" >
 
